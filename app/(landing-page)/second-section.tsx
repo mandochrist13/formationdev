@@ -19,7 +19,7 @@ const logos = [
 const SecondSection = () => {
   return (
     <div className="pt-16 flex justify-center items-center flex-col">
-      <div className="text-4xl w-2/4 text-center xl:text-5xl font-medium">
+      <div className="text-2xl md:text-4xl md:w-2/4 text-center xl:text-5xl font-medium">
         Répondre aux défis d&apos;un monde en constante évolution.
       </div>
       <div className="py-4 xl:w-2/4 text-center px-8">

@@ -9,8 +9,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className=" flex lg:items-center pb-10 flex-col px-8 lg:px-0 xl:w-3/4 mx-auto 2xl:w-[55%] ">
-      <div className="lg:flex  lg:space-x-32 md:px-0 ">
+    <div className=" flex items-center justify-center pb-10 flex-col px-8 lg:px-0 xl:w-3/4 mx-auto">
+      <div className="flex items-center justify-center lg:space-x-32 md:px-0 ">
         <div className="items-center justify-between gap-5 flex  pt-4">
           <Image
             src="/logos/bird-logo.png"
@@ -19,13 +19,15 @@ const Footer = () => {
             alt="logo"
             className=" w-28 "
           />
-          <div className="flex  space-x-2">
-            <PiInstagramLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " />
+          <div className="flex items-center justify-between flex-col md:flex-row space-x-2 md:space-x-5">
+            <div className="flex"><PiInstagramLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " />
             <PiTwitterLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " />
             <PiFacebookLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " />
             <PiYoutubeLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " />
-            <PiLinkedinLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " />
-          </div>Tous Droits Reservés.
+            <PiLinkedinLogoFill className="text-2xl text-[#083849]  hover:text-[#175CFF] " /></div>
+            
+            <div>Tous Droits Reservés.</div>
+          </div>
         </div>
 
         {/* <div className="flex-col space-y-6 ">

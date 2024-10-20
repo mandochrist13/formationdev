@@ -63,21 +63,21 @@ const components: { title: string; href: string; description: string }[] = [
 
 export function Menu() {
   return (
-    <NavigationMenu className="hidden lg:flex">
-      <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+    <NavigationMenu className="flex justify-center items-center ">
+      <div className=" w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex p-4 md:p-0 mt-4 rounded-lg space-x-3 md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
-              <a href="/" className="text-[#083849]  text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]" aria-current="page">
+              <a href="/" className="text-[#083849]  md:text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]" aria-current="page">
                 Accueil
               </a>
             </li>
             <li>
-              <a href="#section1" className="text-[#083849] text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-                Nos métiers
+              <a href="#section1" className="text-[#083849] md:text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+                Métiers
               </a>
             </li>
             <li>
-              <a href="#section2" className="text-[#083849] text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+              <a href="#section2" className="text-[#083849] md:text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
                 Contact
               </a>
             </li>

@@ -96,7 +96,7 @@ const HeroSection = () => {
      
           font-medium text-[#083849]
         
-          2xl:w-1/3
+          
           md:w-2/3
           xl:w-1/2
           
@@ -105,7 +105,7 @@ const HeroSection = () => {
           px-8
     
 
-  text-5xl
+  text-2xl
             xl:text-6xl     
             flex
             justify-center
@@ -120,10 +120,10 @@ const HeroSection = () => {
 
       <p
         className="
-            text-2xl
+           text-base md:text-2xl
             pt-4
             text-center
-            w-2/3
+            md:w-2/3
             mx-auto
             "
       >
@@ -153,8 +153,8 @@ const HeroSection = () => {
         />
       </div>
       {isSmallScreen ? (
-        <div className="px-8">
-          <div className="grid grid-cols-4   md:row-span-1  gap-4  xl:gap-6 mt-8   xl:px-0  ">
+        <div id="section1" className="px-8">
+          <div className="grid grid-cols-2   md:row-span-1  gap-4  xl:gap-6 mt-8   xl:px-0  ">
             {tabs.map((tab) => (
               <motion.div
                 key={tab.name}
@@ -195,7 +195,7 @@ const HeroSection = () => {
                   className="
                 w-full
              border
-             p-20
+             
              xl:p-40
              rounded-xl
           
@@ -207,7 +207,7 @@ const HeroSection = () => {
           </div>
         </div>
       ) : (
-        <div className="flex  xl:space-x-4 items-center justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-3/4 2xl:w-[55%]">
+        <div id="section1" className="lg:flex md:grid md:grid-cols-2  xl:space-x-4 items-center lg:justify-between hover:cursor-pointer gap-4 w-4/5 xl:w-3/4 2xl:w-[55%]">
           {tabs.map((tab) => (
             <motion.div
               key={tab.name}
@@ -281,8 +281,8 @@ const HeroSection = () => {
               alt="logo"
               className="
                 w-full
-                p-20
-                xl:p-40
+                
+                
                 shadow-md
                 rounded-xl
                 bg-[#f6f5f4]
