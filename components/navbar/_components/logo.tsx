@@ -9,10 +9,10 @@ const Logo = () => {
                 <Image
                     src="/logos/bird-logo.png"
                     alt="logo"
-                    width={150}
-                    height={150}
+                    width={500}
+                    height={500}
                     className="
-                    w-24
+                    w-24 bg-cover bg-center
                   "
                     />
             </Link>

@@ -15,12 +15,12 @@ const LandingPage = () => {
         <Navbar />
         <HeroSection />
         <SecondSection />
-        <ThirdSection />
-        <FourthSection />
-        <FifthSection />
+        {/* <ThirdSection /> */}
+        {/* <FourthSection /> */}
+        {/* <FifthSection /> */}
 
         <SixthSection />
-        <SeventhSection />
+        {/* <SeventhSection /> */}
         <GetStartedFree />
         <Footer />
 

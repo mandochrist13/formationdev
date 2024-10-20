@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from "react";
@@ -63,13 +64,35 @@ const components: { title: string; href: string; description: string }[] = [
 export function Menu() {
   return (
     <NavigationMenu className="hidden lg:flex">
-      <NavigationMenuList>
+      <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+            <li>
+              <a href="/" className="text-[#083849]  text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]" aria-current="page">
+                Accueil
+              </a>
+            </li>
+            <li>
+              <a href="#section1" className="text-[#083849] text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+                Nos métiers
+              </a>
+            </li>
+            <li>
+              <a href="#section2" className="text-[#083849] text-xl relative hover:text-[#175CFF] cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#175CFF] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#175CFF] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+    </NavigationMenu>
+  );
+}
+{/* <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger>Product</NavigationMenuTrigger>
           <NavigationMenuContent>
             <div className="flex">
               <ul className="grid  p-2 md:w-[400px]  lg:w-[250px] hover:cursor-pointer border-r">
-                <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                   <PiBookOpenTextLight className="text-2xl mr-2 text-red-600" />
                   <div className="">
                     <a>Wikis</a>
@@ -79,7 +102,7 @@ export function Menu() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                   <PiTargetLight className="text-2xl mr-2 text-blue-600" />
                   <div className="">
                     <a>Projects</a>
@@ -89,7 +112,7 @@ export function Menu() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                   <PiFileThin className="text-2xl mr-2 text-yellow-600" />
                   <div className="">
                     <a>Docs</a>
@@ -99,7 +122,7 @@ export function Menu() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                   <PiSparkleLight className="text-2xl mr-2 text-purple-600" />
                   <div className="">
                     <a>Bird Assistant</a>
@@ -111,7 +134,7 @@ export function Menu() {
               </ul>
               <div>
                 <ul className="grid  p-2 md:w-[400px]  lg:w-[250px] hover:cursor-pointer border-r">
-                  <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                  <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                     <div>
                       <a className="">Template gallery</a>
                       <p className="text-gray-400 text-sm font-light">
@@ -120,7 +143,7 @@ export function Menu() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                  <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                     <div>
                       <a>Customer Stories</a>
                       <p className="text-gray-400 text-sm font-light">
@@ -129,7 +152,7 @@ export function Menu() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-1 hover:bg-gray-400/10 p-1 rounded-sm">
+                  <div className="flex items-center gap-1 hover:bg-[#175CFF]/10 p-1 rounded-sm">
                     <div>
                       <a>Connections</a>
                       <p className="text-gray-400 text-sm font-light">
@@ -199,11 +222,7 @@ export function Menu() {
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-  );
-}
-
+      </NavigationMenuList> */}
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
