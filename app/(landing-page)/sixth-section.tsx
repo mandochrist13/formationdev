@@ -150,8 +150,9 @@ const SixthSection = () => {
                       src={tab.image || ""}
                       width={1025}
                       height={500}
+                      unoptimized
                       alt="logo"
-                      className="w-full  rounded-xl p-10 xl:p-20"
+                      className="w-full  rounded-xl "
                     />
                   </div>
                 </div>
@@ -199,6 +200,7 @@ const SixthSection = () => {
                       src={""}
                       width={500}
                       height={500}
+                      unoptimized
                       alt="logo"
                       className="w-10 h-10 rounded-full border p-1"
                     />

@@ -146,6 +146,7 @@ const HeroSection = () => {
       <div className="py-10 xl:py-20 items-center justify-center">
         <Image
           src="/images/hero.gif"
+          unoptimized
           alt="hero image"
           width={1000}
           height={1000}
@@ -174,7 +175,7 @@ const HeroSection = () => {
                 onClick={() => setActiveTab(tab)}
               >
                 <div className="flex flex-col   items-center md:justify-center mx-auto">
-                  <div className="hidden md:flex text-4xl">{tab.icon}</div>
+                  <div className="flex text-4xl">{tab.icon}</div>
                   <div className="font-medium text-sm  xl:text-lg mt-1">
                     {tab.name}
                   </div>
@@ -192,6 +193,7 @@ const HeroSection = () => {
                   width={1025}
                   height={500}
                   alt="logo"
+                  unoptimized
                   className="
                 w-full
              border
@@ -202,8 +204,13 @@ const HeroSection = () => {
              
                 "
                 />
+                <div  className="flex items-center  md:hidden"><h1 className="text center">{activeTab.description}</h1></div>
+                
+                
               </div>
+              
             )}
+            
           </div>
         </div>
       ) : (

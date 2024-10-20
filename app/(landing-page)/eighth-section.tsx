@@ -26,6 +26,7 @@ const GetStartedFree = () => {
         <Image
             src="/assets/sms.gif"
             alt="hero image"
+            unoptimized
             width={1000}
             height={1000}
             className="w-80 pt-10"
